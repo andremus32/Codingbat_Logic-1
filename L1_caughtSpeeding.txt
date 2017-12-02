@@ -1,0 +1,15 @@
+//Logic-1 > caughtSpeeding
+public int caughtSpeeding(int speed, boolean isBirthday) {
+  int birthDayOverDrive = 0;
+  if(isBirthday){
+    birthDayOverDrive += 5;
+  }
+  
+  if(speed > 0 && speed <= 60 + birthDayOverDrive){
+    return 0;
+  }
+  else if (speed > 60 + birthDayOverDrive && speed <= 80 + birthDayOverDrive){
+    return 1;
+  }
+  else return 2;
+}

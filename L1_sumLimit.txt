@@ -1,0 +1,10 @@
+//Logic-1 > sumLimit
+public int sumLimit(int a, int b) {
+  int x = a + b;
+  String digit = String.valueOf(x);
+  String digitA = String.valueOf(a);
+  if (digit.length() == digitA.length()){
+    return a + b;
+  }
+  else return a;
+}

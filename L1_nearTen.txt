@@ -1,0 +1,4 @@
+//Logic-1 > nearTen
+public boolean nearTen(int num) {
+  return ((num % 10) >= 8 || (num % 10) <= 2);
+}
